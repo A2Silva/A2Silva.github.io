@@ -883,3 +883,75 @@ button,
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+.cert-section {
+  background: #111;
+  padding: 6em 2em;
+  text-align: center;
+  color: #fff;
+}
+
+.cert-card {
+  display: inline-block;
+  background: #1a1a1a;
+  border-left: 4px solid #ffcc00;
+  padding: 2em;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+  transform: translateY(60px);
+  opacity: 0;
+  animation: riseIn 0.6s ease-out 2s forwards;
+}
+
+.cert-title {
+  font-size: 1.75em;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 1em;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 0.5s ease-out 1.8s forwards;
+}
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+  opacity: 0;
+}
+
+.cert-list li {
+  font-size: 1em;
+  color: #ddd;
+  margin: 0.5em 0;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.4s ease-out forwards;
+}
+
+.cert-list li:nth-child(1) { animation-delay: 2.6s; }
+.cert-list li:nth-child(2) { animation-delay: 3s; }
+.cert-list li:nth-child(3) { animation-delay: 3.4s; }
+
+#wave {
+  display: inline-block;
+  opacity: 0;
+  animation: wave 0.5s ease-in-out 1.6s forwards;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); opacity: 0; }
+  50% { transform: rotate(15deg); opacity: 1; }
+  100% { transform: rotate(0deg); opacity: 1; }
+}
+
+@keyframes slideUp {
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes riseIn {
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideIn {
+  to { transform: translateX(0); opacity: 1; }
+}

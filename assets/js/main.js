@@ -169,3 +169,19 @@
 		})();
 
 })();
+// Typing animation for CERTIFICATIONS
+window.addEventListener('DOMContentLoaded', () => {
+  const text = "CERTIFICATIONS";
+  const target = document.getElementById("typed-text");
+  let i = 0;
+
+  function typeLetter() {
+    if (i < text.length) {
+      target.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeLetter, 100);
+    }
+  }
+
+  setTimeout(typeLetter, 500);
+});
