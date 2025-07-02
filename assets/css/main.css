@@ -771,41 +771,16 @@ button,
   #header {
     margin: 0 0 1em 0; } }
 
-/* Signup Form */
-#signup-form {
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  position: relative; }
-  #signup-form input[type="text"],
-  #signup-form input[type="password"],
-  #signup-form input[type="email"] {
-    width: 18em; }
-  #signup-form > * {
-    margin: 0 0 0 1em; }
-  #signup-form > :first-child {
-    margin: 0 0 0 0; }
-  @media screen and (max-width: 480px) {
-    #signup-form {
-      -moz-flex-direction: column;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-      #signup-form input[type="type"],
-      #signup-form input[type="password"],
-      #signup-form input[type="email"] {
-        width: 100%; }
-      #signup-form > * {
-        margin: 1.25em 0 0 0; }
-      #signup-form .message {
-        bottom: -1.5em;
-        font-size: 0.9em;
-        height: 1em;
-        left: 0;
-        line-height: inherit;
-        margin-top: 0;
-        position: absolute; } }
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
 
 /* Footer */
 #footer {
@@ -921,16 +896,19 @@ button,
 
 /* Cert list animation */
 .cert-list {
+  opacity: 0;
+  transform: translate(-30px);
   list-style: none;
   padding: 0;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 1em 0;
+  transition: all 0.6s ease-out;
   text-align: left;
 }
 
 .cert-list li {
-  opacity: 0;
-  transform: translateX(-30px);
+  opacity: 1;
+  transform: translateX(0);
   margin: 1em 0;
   transition: all 0.6s ease-out;
 }
