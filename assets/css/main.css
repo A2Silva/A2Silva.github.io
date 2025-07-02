@@ -100,7 +100,7 @@ body {
   -ms-justify-content: center;
   justify-content: center;
   background-color: #000;
-  padding: 6em 4em 4em 4em; }
+  padding: 0em 4em 4em 4em; }
   body.is-preload *, body.is-preload *:before, body.is-preload *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -888,7 +888,9 @@ button,
 /* Top border bar - inspired by CR7 */
 .top-header-border {
   width: 100vw;
-  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  margin: 0;
   background: #000;
   border-top: 3px solid #ffcc00;  /* Golden CR7-style highlight */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
