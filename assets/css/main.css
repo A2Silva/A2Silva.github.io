@@ -885,11 +885,24 @@ button,
       left: auto;
       margin: 1em 0 0 0;
       position: relative; } }
-/* Custom header positioning */
-.top-centered {
-	position: absolute;
-	top: 5vh;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
+/* Top border bar - inspired by CR7 */
+.top-header-border {
+  width: 100%;
+  background: #000;
+  border-top: 5px solid #ffcc00;  /* Golden CR7-style highlight */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+/* Optional: make header text centered and clean */
+.main-header {
+  padding: 2em 0;
+  text-align: center;
+  background: #111;        /* Dark base for contrast */
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
