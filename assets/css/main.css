@@ -883,75 +883,59 @@ button,
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.cert-section {
+
+#certifications {
   background: #111;
-  padding: 6em 2em;
-  text-align: center;
   color: #fff;
+  padding: 5em 2em;
+  text-align: center;
 }
 
-.cert-card {
-  display: inline-block;
-  background: #1a1a1a;
-  border-left: 4px solid #ffcc00;
-  padding: 2em;
-  border-radius: 8px;
-  max-width: 500px;
-  margin: 0 auto;
-  transform: translateY(60px);
-  opacity: 0;
-  animation: riseIn 0.6s ease-out 2s forwards;
-}
-
-.cert-title {
-  font-size: 1.75em;
+#animated {
+  font-size: 2em;
   font-weight: bold;
   color: #ffcc00;
-  margin-bottom: 1em;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: slideUp 0.5s ease-out 1.8s forwards;
+  letter-spacing: 2px;
+  margin-bottom: 2em;
 }
 
-.cert-list {
-  list-style: none;
-  padding: 0;
-  opacity: 0;
-}
-
-.cert-list li {
-  font-size: 1em;
-  color: #ddd;
-  margin: 0.5em 0;
-  opacity: 0;
-  transform: translateX(-50px);
-  animation: slideIn 0.4s ease-out forwards;
-}
-
-.cert-list li:nth-child(1) { animation-delay: 2.6s; }
-.cert-list li:nth-child(2) { animation-delay: 3s; }
-.cert-list li:nth-child(3) { animation-delay: 3.4s; }
-
-#wave {
+#animated span {
   display: inline-block;
   opacity: 0;
-  animation: wave 0.5s ease-in-out 1.6s forwards;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+/* Your wavy class */
+.wavy {
+  animation: wave 1.3s ease infinite;
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 @keyframes wave {
-  0% { transform: rotate(0deg); opacity: 0; }
-  50% { transform: rotate(15deg); opacity: 1; }
-  100% { transform: rotate(0deg); opacity: 1; }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
 
-@keyframes slideUp {
-  to { transform: translateY(0); opacity: 1; }
+/* Cert list animation */
+.cert-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-@keyframes riseIn {
-  to { transform: translateY(0); opacity: 1; }
+.cert-list li {
+  opacity: 0;
+  transform: translateX(-30px);
+  margin: 1em 0;
+  transition: all 0.6s ease-out;
 }
 
-@keyframes slideIn {
-  to { transform: translateX(0); opacity: 1; }
+.cert-list li.visible {
+  opacity: 1;
+  transform: translateX(0);
 }

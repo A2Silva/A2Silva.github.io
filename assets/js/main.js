@@ -169,19 +169,40 @@
 		})();
 
 })();
-// Typing animation for CERTIFICATIONS
-window.addEventListener('DOMContentLoaded', () => {
-  const text = "CERTIFICATIONS";
-  const target = document.getElementById("typed-text");
-  let i = 0;
 
-  function typeLetter() {
-    if (i < text.length) {
-      target.innerHTML += text.charAt(i);
-      i++;
-      setTimeout(typeLetter, 100);
-    }
-  }
+function updateText(text) {
+  let delay = 200;
+  let h1 = document.getElementById("animated");
 
-  setTimeout(typeLetter, 500);
+  h1.innerHTML = text
+    .split("")
+    .map(letter => `<span>${letter}</span>`)
+    .join("");
+
+  const spans = Array.from(h1.children);
+
+  spans.forEach((span, index) => {
+    setTimeout(() => {
+      span.classList.add("wavy");
+
+      // Reveal certs only after the final letter animates
+      if (index === spans.length - 1) {
+        revealCerts();
+      }
+    }, index * 60 + delay);
+  });
+}
+
+function revealCerts() {
+  const certs = document.querySelectorAll("#cert-list li");
+  certs.forEach((item, index) => {
+    setTimeout(() => {
+      item.classList.add("visible");
+    }, index * 400);
+  });
+}
+
+// Trigger animation on load
+window.addEventListener("DOMContentLoaded", () => {
+  updateText("CERTIFICATIONS");
 });
