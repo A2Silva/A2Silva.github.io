@@ -90,6 +90,15 @@ body {
 }
 
 /* Project Cards */
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+  padding: 3em;
+}
+
 .card {
   width: 320px;
   height: 400px;
@@ -166,4 +175,31 @@ body {
 .cert-list li.visible {
   opacity: 1;
   transform: translateX(0);
+}
+
+/* Footer Section */
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 1em 2em;
+  z-index: 999;
+  font-size: 0.85em;
+}
+
+#footer:hover {
+  opacity: 1;
+}
+
+#footer .copyright {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .copyright li {
+  display: inline;
+  margin-right: 1em;
 }
