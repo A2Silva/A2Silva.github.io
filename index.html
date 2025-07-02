@@ -26,14 +26,82 @@
 				</p>
 			</section>
 		<!-- Projets -->
-			<section id="projects">
+			<section id="projects" class="project-section">
 				<h2>Projects</h2>
- 					 <ul>
-    					<li><strong>Telecom System Upgrade</strong> – Led design and implementation of fiber layout for multi-site upgrade in 2024.</li>
-    					<li><strong>OSP Planning Tool</strong> – Created an AutoCAD/GIS process that reduced design time by 30%.</li>
-    					<li><strong>Cross-Utility Integration</strong> – Worked with electrical teams to pilot joint-trench planning in dense urban areas.</li>
-  					</ul>
-			</section>
+				<div class="card-container">
+					<div class="card">
+					<img src="images/project1.jpg" alt="Telecom System Upgrade">
+					<div class="card-content">
+						<h3>Telecom System Upgrade</h3>
+						<p>Led fiber design and implementation across multi-site network (2024).</p>
+					</div>
+					</div>
+
+					<div class="card">
+					<img src="images/project2.jpg" alt="OSP Planning Tool">
+					<div class="card-content">
+						<h3>OSP Planning Tool</h3>
+						<p>Reduced design time 30% using GIS/AutoCAD hybrid workflow.</p>
+					</div>
+					</div>
+
+					<div class="card">
+					<img src="images/project3.jpg" alt="Cross-Utility Integration">
+					<div class="card-content">
+						<h3>Cross-Utility Integration</h3>
+						<p>Piloted joint-trench coordination for telecom/electric planning.</p>
+					</div>
+					</div>
+				</div>
+				</section>
+
+				<style>
+				.project-section {
+					text-align: center;
+					padding: 4em 2em;
+				}
+
+				.card-container {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					gap: 2em;
+					margin-top: 2em;
+				}
+
+				.card {
+					position: relative;
+					width: 300px;
+					border-radius: 10px;
+					overflow: hidden;
+					box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+					transition: transform 0.3s;
+				}
+
+				.card:hover {
+					transform: translateY(-10px);
+				}
+
+				.card img {
+					width: 100%;
+					display: block;
+				}
+
+				.card-content {
+					background: #fff;
+					padding: 1em;
+					position: absolute;
+					bottom: -100%;
+					left: 0;
+					right: 0;
+					transition: bottom 0.3s ease-in-out;
+				}
+
+				.card:hover .card-content {
+					bottom: 0;
+				}
+				</style>
+
 
 		<!-- Footer -->
 			<footer id="footer">
