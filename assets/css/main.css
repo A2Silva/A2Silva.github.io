@@ -78,7 +78,9 @@ html {
   box-sizing: inherit; }
 
 html, body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  height: auto;
   overflow-x: hidden;
   width: 100%; }
   @media screen and (max-height: 640px) {
@@ -887,20 +889,20 @@ button,
       position: relative; } }
 /* Top border bar - inspired by CR7 */
 .top-header-border {
-  width: 100vw;
+  width: 100%;
   position: sticky;
   top: 0;
   margin: 0;
   background: #000;
-  border-top: 3px solid #ffcc00;  /* Golden CR7-style highlight */
+  border-top: 6px solid #ffcc00;  /* Golden CR7-style highlight */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   position: relative;
-  z-index: 10;
+  z-index: 1000;
 }
 
 /* Optional: make header text centered and clean */
 .main-header {
-  padding: 1.5em 0;
+  padding: 2em 1em;
   line-height: 1.6em;
   text-align: center;
   background: #111;        /* Dark base for contrast */
