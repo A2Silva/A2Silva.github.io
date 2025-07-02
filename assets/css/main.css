@@ -887,9 +887,10 @@ button,
       position: relative; } }
 /* Top border bar - inspired by CR7 */
 .top-header-border {
-  width: 100%;
+  width: 100vw;
+  margin: 0 auto;
   background: #000;
-  border-top: 5px solid #ffcc00;  /* Golden CR7-style highlight */
+  border-top: 3px solid #ffcc00;  /* Golden CR7-style highlight */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 10;
@@ -897,7 +898,8 @@ button,
 
 /* Optional: make header text centered and clean */
 .main-header {
-  padding: 2em 0;
+  padding: 1.5em 0;
+  line-height: 1.6em;
   text-align: center;
   background: #111;        /* Dark base for contrast */
   color: #fff;
