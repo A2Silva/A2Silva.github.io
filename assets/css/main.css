@@ -885,3 +885,11 @@ button,
       left: auto;
       margin: 1em 0 0 0;
       position: relative; } }
+/* Custom header positioning */
+.top-centered {
+	position: absolute;
+	top: 5vh;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
