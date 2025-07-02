@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
-/* Reset */
-
-::before,
-::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
+/* Body */
 html,
 body {
   height: 100%;
@@ -63,7 +55,7 @@ body {
   left: 0;
   margin: 0;
   background: #000;
-  border-top: 6px solid #ffcc00;
+  border-top: 3px solid #000000;
   box-shadow: 0 4px 10px rgba(92, 91, 91, 0.123);
   position: relative;
   z-index: 999;
@@ -72,21 +64,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 2em;
+  padding: 1em 1em;
   background: #111;
   color: #fff;
   font-size: 1.5em;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-.header-left,
-.header-right {
-  flex: 0 0 auto;
-}
-.header-right {
-  font-size: 1em;
-  color: #ffcc00;
 }
 
 /* Project Cards */
@@ -128,78 +112,3 @@ body {
   justify-content: center;
 }
 
-/* Certifications Section */
-#certifications {
-  background: #111;
-  color: #fff;
-  padding: 5em 2em;
-  text-align: center;
-}
-#animated {
-  font-size: 2em;
-  font-weight: bold;
-  color: #ffcc00;
-  letter-spacing: 2px;
-  margin-bottom: 2em;
-}
-#animated span {
-  display: inline-block;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-}
-.wavy {
-  animation: wave 1.3s ease infinite;
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-@keyframes wave {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
-}
-.cert-list {
-  list-style: none;
-  padding: 0;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
-}
-.cert-list li {
-  opacity: 0;
-  transform: translateX(-30px);
-  font-size: 1.1em;
-  margin-bottom: 1em;
-  transition: all 0.6s ease-out;
-}
-.cert-list li.visible {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* Footer Section */
-
-#footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  color: rgba(255, 255, 255, 0.5);
-  padding: 1em 2em;
-  z-index: 999;
-  font-size: 0.85em;
-}
-
-#footer:hover {
-  opacity: 1;
-}
-
-#footer .copyright {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#footer .copyright li {
-  display: inline;
-  margin-right: 1em;
-}
