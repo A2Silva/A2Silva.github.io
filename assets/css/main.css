@@ -1,28 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
-/* Intro */
-
-#intro-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  z-index: 9999;
-  transition: opacity 2s ease-in-out;
-  opacity: 1;
-  pointer-events: none;
-}
-#intro-overlay.hidden {
-  opacity: 0;
-}
-
-
 /* Body */
-
-<div id="intro-overlay"></div>
-
 
 html,
 body {
@@ -32,43 +10,6 @@ body {
   background-color: #000;
   color: rgba(255, 255, 255, 0.85);
   overflow-x: hidden;
-}
-
-/* Glowing background slideshow */
-#bg {
-  transition: opacity 2s ease-in-out;
-  height: 100%;
-  left: 0;
-  opacity: 0.375;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-#bg div {
-  transition: opacity 3s ease;
-  background-size: cover;
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  visibility: hidden;
-  width: 150%;
-}
-#bg div.visible {
-  animation: bg 45s linear infinite;
-  opacity: 1;
-  visibility: visible;
-  z-index: 1;
-}
-@keyframes bg {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-25%);
-  }
 }
 
 /* Top header with job title */
@@ -87,8 +28,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 1em;
-  background: #111;
+  padding: 0em 0em;
+  background: #000000;
   color: #fff;
   font-size: 1.5em;
   font-weight: 600;
