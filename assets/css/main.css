@@ -40,6 +40,7 @@ body {
 }
 
 /* Project Cards */
+
 .main-section {
   display: flex;
   flex-wrap: wrap;
@@ -78,3 +79,38 @@ body {
   justify-content: center;
 }
 
+/* Certifications Section */
+
+.cert-section {
+  width: 320px;
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 12px;
+  padding: 2em;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.cert-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: #1cb495;
+  text-align: center;
+}
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cert-list li {
+  margin-bottom: 0.75em;
+  padding-left: 1em;
+  position: relative;
+}
+
+.cert-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1cb495;
+}
