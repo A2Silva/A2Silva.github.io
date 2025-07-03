@@ -19,8 +19,8 @@ body {
   left: 0;
   margin: 0;
   background: #000;
-  border-top: 3px solid #000000;
-  box-shadow: 0 2px 5px rgba(92, 91, 91, 0.123);
+  border-top: 0px solid #000000;
+  box-shadow: 0 0px 0px rgb(0, 0, 0);
   position: relative;
   z-index: 999;
 }
