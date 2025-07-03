@@ -13,23 +13,24 @@ body {
 }
 
 /* Top header with job title */
+
 .top-header-border {
-  width: 100%;
-  top: 100%;
-  left: 100%;
-  right: 100%;
+  width: 100vw; /* Ensures full viewport width */
+  position: fixed;
+  top: 0;
+  left: 0;
   margin: 0;
   background: #000;
-  border-top: 0px solid #000000;
-  box-shadow: 0 0px 0px rgb(0, 0, 0);
-  position: relative;
+  border-top: 4px solid #1cb495; /* Or your highlight color */
+  box-shadow: 0 2px 5px rgba(92, 91, 91, 0.25);
   z-index: 999;
 }
+
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0em 0em;
+  padding: 1em 2em;
   background: #000000;
   color: #fff;
   font-size: 1.5em;
