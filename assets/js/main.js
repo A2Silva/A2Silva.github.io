@@ -27,6 +27,10 @@
 				$body.classList.remove('is-preload');
 			}, 100);
 		});
+			const overlay = document.getElementById('intro-overlay');
+			setTimeout(() => {
+			overlay.classList.add('hidden');
+			}, 800);  // Wait before fading
 
 	// Slideshow Background.
 		(function() {
