@@ -33,10 +33,11 @@ body {
 
 
 #data-center {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(50%, 50%);
+  transform: scale(1.5);
 }
 
 #preloader .path {
@@ -49,10 +50,11 @@ body {
 }
 
 #data-center {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(50%, 50%);
+  transform: scale(1.5);
 }
 
 #data-center .path {
