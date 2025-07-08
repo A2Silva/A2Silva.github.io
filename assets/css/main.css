@@ -25,25 +25,70 @@ body {
   transition: opacity 1s ease;
 }
 
-#tower-svg .path {
-  fill: none;
-  stroke: #1cb495;
-  stroke-width: 3;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: draw 2.8s ease forwards, pulse 1.2s ease 3.2s 1;
+/* === Preloader Animation Styles === */
+
+#preloader {
+  position: fixed;
+  inset: 0;
+  background-color: #000;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes draw {
+#preloader-svg {
+  width: 100%;
+  height: 100%;
+}
+
+#preloader path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: trace 2s ease forwards;
+}
+
+#data-center path {
+  animation-delay: 0s;
+}
+
+#real-estate path,
+#antenna path,
+#house path {
+  animation-delay: 3s;
+}
+
+@keyframes trace {
   to {
     stroke-dashoffset: 0;
   }
 }
 
+.pulse {
+  animation: pulse 1s ease forwards;
+}
+
 @keyframes pulse {
-  0% { transform: scale(1); stroke: #1cb495; }
-  50% { transform: scale(1.05); stroke: #36ffe0; }
-  100% { transform: scale(1); stroke: #1cb495; }
+  0%   { transform: scale(1); opacity: 1; }
+  50%  { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Line draw animations */
+
+#line-left,
+#line-up,
+#line-right {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: draw-line 1s ease forwards;
+  animation-delay: 2.2s;
+}
+
+@keyframes draw-line {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 /* Top header with job title */
