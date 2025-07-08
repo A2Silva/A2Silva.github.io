@@ -27,7 +27,7 @@ window.addEventListener("load", () => {
     icons.forEach(icon => {
       if (icon) icon.classList.add("pulse");
     });
-  }, 3700); // lines finish
+  }, 2800); // lines finish
 
   // Step 3: Fade out preloader and remove
   setTimeout(() => {
@@ -36,5 +36,5 @@ window.addEventListener("load", () => {
     setTimeout(() => {
       preloader.remove();
     }, 1000); // Wait for fade
-  }, 4700); // After pulse
+  }, 6000); // After pulse
 });
