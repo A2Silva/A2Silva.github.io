@@ -71,18 +71,24 @@ body {
   position: relative;
   left: 25%;
   top: 50%;
+  transform-origin: center;
+  transform: translate(25%, 50%);
 }
 
 #antenna {
   position: relative;
   top: 50%;
   left: 20%;
+  transform-origin: center;
+  transform: translate(50%, 20%);
 }
 
 #house {
   position: relative;
   right: 75%;
   top: 50%;
+  transform-origin: center;
+  transform: translate(75%, 50%);
 }
 
 /* Pulse effect */
