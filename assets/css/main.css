@@ -70,31 +70,31 @@ body {
 #real-estate {
   position: relative;
   left: 25%;
-  top: 20%;
+  top: 80%;
   transform-origin: center;
-  transform: translate(25%, 20%);
+  transform: translate(25%, 80%);
 }
 
 #antenna {
   position: relative;
   top: 60%;
-  left: 10%;
+  left: 50%;
   transform-origin: center;
-  transform: translate(60%, 10%);
+  transform: translate(60%, 50%);
 }
 
 #house {
   position: relative;
   right: 75%;
-  top: 20%;
+  top: 80%;
   transform-origin: center;
-  transform: translate(75%, 20%);
+  transform: translate(75%, 80%);
 }
 
 /* Pulse effect */
 
 .pulse {
-  animation: pulse 1.5s ease forwards;
+  animation: pulse 2s ease forwards;
 }
 
 @keyframes trace {
