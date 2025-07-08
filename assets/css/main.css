@@ -195,6 +195,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1.5em
+  flex-wrap wrap;
 }
 
 .chevron {
