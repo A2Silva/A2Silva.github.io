@@ -67,36 +67,18 @@ body {
 
 #antenna {
   position: relative;
-  top: 60%;
-  left: 50%;
+  top: 20%;
+  left: 20%;
   transform-origin: center;
-  transform: translate(60%, 50%);
+  transform: translate(20%, 20%);
 }
 
 #house {
   position: relative;
-  right: 75%;
+  right: 70%;
   top: 80%;
   transform-origin: center;
-  transform: translate(75%, 80%);
-}
-
-/* Pulse effect */
-
-.pulse {
-  animation: pulse 2s ease forwards;
-}
-
-@keyframes trace {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes pulse {
-  0%   { transform: scale(1); opacity: 1; }
-  50%  { transform: scale(1.1); opacity: 1; }
-  100% { transform: scale(1); opacity: 1; }
+  transform: translate(70%, 80%);
 }
 
 /* Line animations */
