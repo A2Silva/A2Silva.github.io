@@ -69,21 +69,21 @@ body {
   position: absolute;
   left: 25%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(25%, 50%);
 }
 
 #antenna {
   position: absolute;
   top: 15%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(50%, 20%);
 }
 
 #house {
   position: absolute;
   right: 25%;
   top: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(75%, 50%);
 }
 
 #real-estate { left: 25%; top: 50%; }
@@ -137,7 +137,7 @@ body {
 #line-right {
   stroke-dasharray: 300;
   stroke-dashoffset: 300;
-  animation: draw-line 1s ease forwards;
+  animation: draw-line 2s ease forwards;
   animation-delay: 2.5s;
 }
 
