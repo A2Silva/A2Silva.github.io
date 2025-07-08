@@ -145,12 +145,12 @@ body {
 }
 .card-content {
   height: 40%;
-  background: #fff;
+  background: #1a1a1a;
   padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #000;
+  color: #fff;
 }
 
 /* Certifications Section */
