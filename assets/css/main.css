@@ -26,13 +26,11 @@ body {
 }
 
 #preloader-svg {
-  width: 600px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  width: 80vw;
+  height: auto;
+  max-width: 600px;
 }
+
 
 #data-center {
   position: absolute;
@@ -89,6 +87,19 @@ body {
 }
 
 /* Line animations */
+
+#line-left {
+  transform: rotate(-45deg);
+  transform-origin: center;
+}
+#line-up {
+  transform: rotate(0deg);
+  transform-origin: center;
+}
+#line-right {
+  transform: rotate(45deg);
+  transform-origin: center;
+}
 
 #line-left,
 #line-up,
