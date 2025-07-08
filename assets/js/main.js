@@ -1,22 +1,18 @@
 window.addEventListener("load", () => {
   const preloader = document.getElementById("preloader");
+  
+  // Wait for animation to finish (draw + pulse + small buffer)
   setTimeout(() => {
-    preloader.style.opacity = "0";
     preloader.style.transition = "opacity 1s ease";
-    setTimeout(() => preloader.remove(), 1000);
-  }, 3500); // 3s draw + 0.5s buffer
-});
-
-window.addEventListener("load", () => {
-  const preloader = document.getElementById("preloader");
-  setTimeout(() => {
     preloader.style.opacity = "0";
+    
+    // After fade-out completes, remove it
     setTimeout(() => {
       preloader.remove();
-    }, 1000); // after fade out
-  }, 4200); // 2.8s draw + 1.2s pulse + buffer
+    }, 1000);
+    
+  }, 4200); // 2.8s draw + 1.2s pulse + 0.2s buffer
 });
-
 
 	
 		
