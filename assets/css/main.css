@@ -28,6 +28,17 @@ body {
 #preloader-svg {
   width: 600px;
   height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#data-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #preloader .path {
@@ -48,6 +59,16 @@ body {
 #house .path {
   animation-delay: 3.2s;
 }
+
+#real-estate, #antenna, #house {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#real-estate { left: 25%; top: 50%; }
+#antenna { left: 50%; top: 20%; }
+#house { left: 75%; top: 50%; }
+
 
 /* Pulse effect */
 
