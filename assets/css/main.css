@@ -36,7 +36,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(50%, 50%);
 }
 
 #preloader .path {
@@ -52,7 +52,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(50%, 50%);
 }
 
 #data-center .path {
@@ -67,28 +67,28 @@ body {
 
 #real-estate {
   position: absolute;
-  left: 25%;
+  left: 50%;
   top: 50%;
-  transform: translate(25%, 50%);
+  transform: translate(50%, 50%);
 }
 
 #antenna {
   position: absolute;
-  top: 15%;
+  top: 50%;
   left: 50%;
-  transform: translate(50%, 20%);
+  transform: translate(50%, 50%);
 }
 
 #house {
   position: absolute;
-  right: 25%;
+  right: 50%;
   top: 50%;
-  transform: translate(75%, 50%);
+  transform: translate(50%, 50%);
 }
 
-#real-estate { left: 25%; top: 50%; }
-#antenna { left: 50%; top: 20%; }
-#house { left: 75%; top: 50%; }
+#real-estate { left: 50%; top: 50%; }
+#antenna { left: 50%; top: 50%; }
+#house { left: 50%; top: 50%; }
 
 .icon {
   width: 80px;
