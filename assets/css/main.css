@@ -26,8 +26,8 @@ body {
 }
 
 #preloader-svg {
-  width: 1685vw;
-  height: 835vh;
+  width: 1200;
+  height: 800;
 }
 
 #preloader .path {
@@ -215,6 +215,47 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transform: scale(1.03);
+}
+
+.chevron {
+  --s: 75px;
+  height: 250px; /* larger box */
+  aspect-ratio: 3/5;
+  clip-path: polygon(0 0,var(--s) 0,100% 50%,var(--s) 100%,0 100%,calc(100% - var(--s)) 50%);
+  background: #5E9FA3;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 0 2px #1cb495;
+  z-index: 1;
+}
+
+.chevron::before {
+  content: "";
+  position: absolute;
+  inset: -5%;
+  border: 2px solid #1cb495;
+  clip-path: polygon(0 0,var(--s) 0,100% 50%,var(--s) 100%,0 100%,calc(100% - var(--s)) 50%);
+  animation: outline-loop 8s linear infinite;
+  z-index: 0;
+}
+
+@keyframes outline-loop {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
 }
 
 /* Footer */
