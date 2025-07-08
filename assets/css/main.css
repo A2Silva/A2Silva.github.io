@@ -45,7 +45,7 @@ body {
   stroke-width: 1.5;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: trace 2.5s ease forwards;
+  animation: trace 4s ease forwards;
 }
 
 #data-center {
@@ -67,28 +67,25 @@ body {
 
 #real-estate {
   position: absolute;
-  left: 50%;
+  left: 25%;
   top: 50%;
-  transform: translate(50%, 50%);
+  transform: translate(25%, 50%);
 }
 
 #antenna {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(50%, 50%);
+  left: 20%;
+  transform: translate(50%, 20%);
 }
 
 #house {
   position: absolute;
-  right: 50%;
+  right: 75%;
   top: 50%;
-  transform: translate(50%, 50%);
+  transform: translate(75%, 50%);
 }
 
-#real-estate { left: 50%; top: 50%; }
-#antenna { left: 50%; top: 50%; }
-#house { left: 50%; top: 50%; }
 
 .icon {
   width: 80px;
