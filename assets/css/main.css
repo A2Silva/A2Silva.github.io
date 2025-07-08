@@ -185,3 +185,33 @@ body {
 .contact-button:hover {
   background-color: #17a689;
 }
+
+/* Bio */
+
+.bio-section {
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.bio-box {
+  max-width: 800px;
+  background: #111;
+  color: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 200, 0.15);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.bio-box h2 {
+  margin-bottom: 1em;
+  color: #1cb495;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+.bio-box p + p {
+  margin-top: 1em;
+}
+
