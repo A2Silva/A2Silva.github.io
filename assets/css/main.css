@@ -130,6 +130,32 @@ body {
   color: #1cb495;
 }
 
+/* Portrait */
+
+.portrait-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chevron {
+  --s: 75px;
+  height: 220px;
+  aspect-ratio: 3/5;
+  clip-path: polygon(0 0,var(--s) 0,100% 50%,var(--s) 100%,0 100%,calc(100% - var(--s)) 50%);
+  background: #5E9FA3;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chevron img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* Footer */
 
 #contact-footer {
