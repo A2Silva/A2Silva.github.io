@@ -48,6 +48,13 @@ body {
   animation: trace 2.5s ease forwards;
 }
 
+#data-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #data-center .path {
   animation-delay: 0s;
 }
@@ -58,14 +65,38 @@ body {
   animation-delay: 3.2s;
 }
 
-#real-estate, #antenna, #house {
+#real-estate {
   position: absolute;
+  left: 25%;
+  top: 50%;
   transform: translate(-50%, -50%);
+}
+
+#antenna {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#house {
+  position: absolute;
+  right: 25%;
+  top: 50%;
+  transform: translate(50%, -50%);
 }
 
 #real-estate { left: 25%; top: 50%; }
 #antenna { left: 50%; top: 20%; }
 #house { left: 75%; top: 50%; }
+
+.icon {
+  width: 80px;
+  height: 80px;
+  stroke: #1cb495;
+  fill: none;
+  stroke-width: 1.5;
+}
 
 
 /* Pulse effect */
