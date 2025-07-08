@@ -26,18 +26,8 @@ body {
 }
 
 #preloader-svg {
-  width: 1200vw;
-  height: 800vw;
-  max-width: 800px;
-}
-
-
-#data-center {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  transform: translate(0%, 0%);
-  transform: scale(1.5);
+  width: 1685vw;
+  height: 835vh;
 }
 
 #preloader .path {
