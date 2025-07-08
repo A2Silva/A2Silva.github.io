@@ -12,6 +12,40 @@ body {
   overflow-x: hidden;
 }
 
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.path {
+  fill: none;
+  stroke: #1cb495;
+  stroke-width: 3;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 3s ease forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Pulse after draw complete */
+
+@keyframes pulse {
+  0%, 100% { stroke: #1cb495; transform: scale(1); }
+  50% { stroke: #36ffe0; transform: scale(1.05); }
+}
+
 /* Top header with job title */
 
 .top-header-border {
