@@ -75,4 +75,42 @@ body {
   box-shadow: 0 0 40px rgba(28, 180, 149, 0.2);
 }
 
+/* Frosted Glass Background */
+
+#background-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.bg-layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px) brightness(0.4) saturate(1.5);
+  opacity: 0.6;
+  animation: fade-bg 20s infinite alternate ease-in-out;
+}
+
+/* Individual backgrounds */
+.bg01 {
+  background-image: url("../images/bg01.jpg");
+  animation-delay: 0s;
+}
+.bg02 {
+  background-image: url("../images/bg02.jpg");
+  animation-delay: 5s;
+}
+.bg03 {
+  background-image: url("../images/bg03.jpg");
+  animation-delay: 10s;
+}
+
+/* Optional fade/glow effect */
+@keyframes fade-bg {
+  0% { opacity: 0.5; transform: scale(1); }
+  100% { opacity: 0.8; transform: scale(1.02); }
+}
 
