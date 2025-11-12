@@ -31,7 +31,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1em 2em;
-  background: #000;
+  background: rgb(0, 0, 0, 0.6);
   color: #fff;
   font-size: 1.25em;
   font-weight: 600;
@@ -80,7 +80,7 @@ body {
 #background-wrapper {
   position: fixed;
   inset: 0;
-  z-index: 0;
+  z-index: -1; /* Always behind all content */
   overflow: hidden;
 }
 
@@ -89,28 +89,28 @@ body {
   inset: 0;
   background-size: cover;
   background-position: center;
-  filter: blur(10px) brightness(0.4) saturate(1.5);
   opacity: 0.6;
-  animation: fade-bg 20s infinite alternate ease-in-out;
+  filter: blur(12px) brightness(0.5);
+  animation: fade-bg 20s ease-in-out infinite alternate;
 }
 
-/* Individual backgrounds */
 .bg01 {
   background-image: url("../images/bg01.jpg");
   animation-delay: 0s;
 }
+
 .bg02 {
   background-image: url("../images/bg02.jpg");
-  animation-delay: 5s;
-}
-.bg03 {
-  background-image: url("../images/bg03.jpg");
   animation-delay: 10s;
 }
 
-/* Optional fade/glow effect */
+.bg03 {
+  background-image: url("../images/bg03.jpg");
+  animation-delay: 20s;
+}
+
 @keyframes fade-bg {
-  0% { opacity: 0.5; transform: scale(1); }
-  100% { opacity: 0.8; transform: scale(1.02); }
+  0% { opacity: 0.3; transform: scale(1); }
+  100% { opacity: 0.6; transform: scale(1.02); }
 }
 
