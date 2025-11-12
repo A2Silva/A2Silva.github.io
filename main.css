@@ -138,8 +138,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5em
-  flex-wrap wrap;
+  gap: 0.25in; /* ~1/4 inch */
+  flex-wrap: wrap;
 }
 
 .chevron {
